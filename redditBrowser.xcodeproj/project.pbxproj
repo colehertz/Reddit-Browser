@@ -14,6 +14,18 @@
 		EDD174221B3233C900AD78E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD174211B3233C900AD78E1 /* Images.xcassets */; };
 		EDD174251B3233C900AD78E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD174231B3233C900AD78E1 /* LaunchScreen.xib */; };
 		EDD174311B3233C900AD78E1 /* redditBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD174301B3233C900AD78E1 /* redditBrowserTests.swift */; };
+		EDD174441B32353700AD78E1 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1743C1B32353700AD78E1 /* Alamofire.swift */; };
+		EDD174451B32353700AD78E1 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1743D1B32353700AD78E1 /* Download.swift */; };
+		EDD174461B32353700AD78E1 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1743E1B32353700AD78E1 /* Manager.swift */; };
+		EDD174471B32353700AD78E1 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1743F1B32353700AD78E1 /* ParameterEncoding.swift */; };
+		EDD174481B32353700AD78E1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD174401B32353700AD78E1 /* Request.swift */; };
+		EDD174491B32353700AD78E1 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD174411B32353700AD78E1 /* ResponseSerialization.swift */; };
+		EDD1744A1B32353700AD78E1 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD174421B32353700AD78E1 /* Upload.swift */; };
+		EDD1744B1B32353700AD78E1 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD174431B32353700AD78E1 /* Validation.swift */; };
+		EDD1744D1B32356500AD78E1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1744C1B32356500AD78E1 /* Post.swift */; };
+		EDD1744F1B3235A600AD78E1 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1744E1B3235A600AD78E1 /* CustomCell.swift */; };
+		EDD174521B323B3B00AD78E1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD174511B323B3B00AD78E1 /* SwiftyJSON.swift */; };
+		EDD174541B32512400AD78E1 /* PostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD174531B32512400AD78E1 /* PostDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +50,20 @@
 		EDD1742A1B3233C900AD78E1 /* redditBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = redditBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD1742F1B3233C900AD78E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD174301B3233C900AD78E1 /* redditBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redditBrowserTests.swift; sourceTree = "<group>"; };
+		EDD1743B1B32353700AD78E1 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		EDD1743C1B32353700AD78E1 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		EDD1743D1B32353700AD78E1 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
+		EDD1743E1B32353700AD78E1 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		EDD1743F1B32353700AD78E1 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		EDD174401B32353700AD78E1 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		EDD174411B32353700AD78E1 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		EDD174421B32353700AD78E1 /* Upload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upload.swift; sourceTree = "<group>"; };
+		EDD174431B32353700AD78E1 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		EDD1744C1B32356500AD78E1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EDD1744E1B3235A600AD78E1 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		EDD174501B323B3B00AD78E1 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		EDD174511B323B3B00AD78E1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		EDD174531B32512400AD78E1 /* PostDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +107,16 @@
 			children = (
 				EDD174171B3233C900AD78E1 /* AppDelegate.swift */,
 				EDD1741C1B3233C900AD78E1 /* ViewController.swift */,
+				EDD1744C1B32356500AD78E1 /* Post.swift */,
+				EDD174531B32512400AD78E1 /* PostDetails.swift */,
+				EDD1744E1B3235A600AD78E1 /* CustomCell.swift */,
 				EDD1741E1B3233C900AD78E1 /* Main.storyboard */,
+				EDD1743A1B32352900AD78E1 /* AlamoFire */,
 				EDD174211B3233C900AD78E1 /* Images.xcassets */,
 				EDD174231B3233C900AD78E1 /* LaunchScreen.xib */,
 				EDD174191B3233C900AD78E1 /* redditBrowser.xcdatamodeld */,
+				EDD174501B323B3B00AD78E1 /* SwiftyJSON.h */,
+				EDD174511B323B3B00AD78E1 /* SwiftyJSON.swift */,
 				EDD174151B3233C900AD78E1 /* Supporting Files */,
 			);
 			path = redditBrowser;
@@ -113,6 +145,22 @@
 				EDD1742F1B3233C900AD78E1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDD1743A1B32352900AD78E1 /* AlamoFire */ = {
+			isa = PBXGroup;
+			children = (
+				EDD1743B1B32353700AD78E1 /* Alamofire.h */,
+				EDD1743C1B32353700AD78E1 /* Alamofire.swift */,
+				EDD1743D1B32353700AD78E1 /* Download.swift */,
+				EDD1743E1B32353700AD78E1 /* Manager.swift */,
+				EDD1743F1B32353700AD78E1 /* ParameterEncoding.swift */,
+				EDD174401B32353700AD78E1 /* Request.swift */,
+				EDD174411B32353700AD78E1 /* ResponseSerialization.swift */,
+				EDD174421B32353700AD78E1 /* Upload.swift */,
+				EDD174431B32353700AD78E1 /* Validation.swift */,
+			);
+			name = AlamoFire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +263,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD174471B32353700AD78E1 /* ParameterEncoding.swift in Sources */,
+				EDD1744F1B3235A600AD78E1 /* CustomCell.swift in Sources */,
+				EDD174481B32353700AD78E1 /* Request.swift in Sources */,
+				EDD1744B1B32353700AD78E1 /* Validation.swift in Sources */,
+				EDD1744D1B32356500AD78E1 /* Post.swift in Sources */,
+				EDD174521B323B3B00AD78E1 /* SwiftyJSON.swift in Sources */,
 				EDD1741D1B3233C900AD78E1 /* ViewController.swift in Sources */,
+				EDD174461B32353700AD78E1 /* Manager.swift in Sources */,
+				EDD174491B32353700AD78E1 /* ResponseSerialization.swift in Sources */,
 				EDD1741B1B3233C900AD78E1 /* redditBrowser.xcdatamodeld in Sources */,
+				EDD1744A1B32353700AD78E1 /* Upload.swift in Sources */,
+				EDD174441B32353700AD78E1 /* Alamofire.swift in Sources */,
+				EDD174541B32512400AD78E1 /* PostDetails.swift in Sources */,
 				EDD174181B3233C900AD78E1 /* AppDelegate.swift in Sources */,
+				EDD174451B32353700AD78E1 /* Download.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

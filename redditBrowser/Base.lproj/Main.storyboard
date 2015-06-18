@@ -1,25 +1,160 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="redditBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="21r-qP-L4S">
+                                <rect key="frame" x="80" y="96" width="238" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subreddit Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paO-v0-3U4">
+                                <rect key="frame" x="80" y="56" width="161" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="111" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="28r-NV-GnF">
+                                <rect key="frame" x="0.0" y="240" width="414" height="496"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" id="RSl-9q-es5" customClass="CustomCell" customModule="redditBrowser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RSl-9q-es5" id="Jwi-x2-09E">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90x-a0-07Q">
+                                                    <rect key="frame" x="106" y="18" width="252" height="31"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESc-PJ-qSy">
+                                                    <rect key="frame" x="106" y="45" width="142" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upvotes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbl-IL-MAq">
+                                                    <rect key="frame" x="106" y="68" width="142" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="ESc-PJ-qSy" id="RXi-Mz-TmX"/>
+                                            <outlet property="titleLabel" destination="90x-a0-07Q" id="6zt-Ew-DxN"/>
+                                            <outlet property="upvotesLabeL" destination="Xbl-IL-MAq" id="W2r-RJ-ia4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4q-8T-ZGL">
+                                <rect key="frame" x="80" y="134" width="238" height="45"/>
+                                <state key="normal" title="Find">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0ub-vV-icK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="nameField" destination="21r-qP-L4S" id="Gil-wI-4MH"/>
+                        <outlet property="tableView" destination="28r-NV-GnF" id="ZpJ-t6-yXo"/>
+                        <segue destination="4HP-6u-uLV" kind="show" identifier="infoSegue" id="SVz-px-bYg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Post Details-->
+        <scene sceneID="dLR-yb-avN">
+            <objects>
+                <viewController id="4HP-6u-uLV" customClass="PostDetails" customModule="redditBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MpH-MQ-qW4"/>
+                        <viewControllerLayoutGuide type="bottom" id="pEQ-gQ-mMc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vdv-CE-UoN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jNc-qp-9Mb">
+                                <rect key="frame" x="0.0" y="66" width="414" height="683"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="683" id="CQU-My-jM2"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="CQU-My-jM2"/>
+                                    </mask>
+                                </variation>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcP-eh-k3L">
+                                <rect key="frame" x="342" y="28" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="bWc-ay-iBN"/>
+                                </constraints>
+                                <state key="normal" title="back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackPressed:" destination="nFs-We-7OD" eventType="touchUpInside" id="LUW-tv-3wD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jNc-qp-9Mb" firstAttribute="top" secondItem="BcP-eh-k3L" secondAttribute="bottom" constant="8" symbolic="YES" id="2pk-DR-Erv"/>
+                            <constraint firstAttribute="centerX" secondItem="jNc-qp-9Mb" secondAttribute="centerX" id="7L5-5V-IWN"/>
+                            <constraint firstAttribute="trailing" secondItem="jNc-qp-9Mb" secondAttribute="trailing" id="DbN-Yn-cuh"/>
+                            <constraint firstItem="BcP-eh-k3L" firstAttribute="top" secondItem="MpH-MQ-qW4" secondAttribute="bottom" constant="8" symbolic="YES" id="Nbx-vD-OTS"/>
+                            <constraint firstItem="jNc-qp-9Mb" firstAttribute="leading" secondItem="Vdv-CE-UoN" secondAttribute="leading" id="bL3-yF-GwU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jNc-qp-9Mb" secondAttribute="bottom" constant="-13" id="cap-cg-Mwx"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="jNc-qp-9Mb" secondAttribute="bottom" constant="-13" id="etM-kz-hz3"/>
+                            <constraint firstItem="jNc-qp-9Mb" firstAttribute="leading" secondItem="Vdv-CE-UoN" secondAttribute="leading" id="lU6-uu-zXZ"/>
+                            <constraint firstItem="jNc-qp-9Mb" firstAttribute="top" secondItem="BcP-eh-k3L" secondAttribute="bottom" constant="8" symbolic="YES" id="lbB-8c-EfL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BcP-eh-k3L" secondAttribute="trailing" constant="10" id="odq-9R-pAp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2pk-DR-Erv"/>
+                                <exclude reference="7L5-5V-IWN"/>
+                                <exclude reference="cap-cg-Mwx"/>
+                                <exclude reference="lU6-uu-zXZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="webView" destination="jNc-qp-9Mb" id="y0u-dC-rWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nFs-We-7OD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="290"/>
         </scene>
     </scenes>
 </document>
